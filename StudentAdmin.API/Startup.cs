@@ -44,8 +44,10 @@ namespace StudentAdmin.API
             });
 
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IImageRepository, ImageRepository>();
 
             services.AddControllers();
+            
 
             services.AddDbContext<VtContext>(opt =>
             {
